@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Task 1 -->
+    <script src="main.js" defer></script>
+
+    <!-- Task 14 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Local Community Event Portal</h1>
+        <p>Discover and register for exciting community events</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Find Events Near You</h2>
+            <p>
+                Explore workshops, music nights, sports meets,
+                cultural programs, coding bootcamps and more.
+            </p>
+        </section>
+
+        <!-- Task 8 -->
+        <section class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events..."
+            >
+
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Music">Music</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Sports">Sports</option>
+                <option value="Technology">Technology</option>
+                <option value="Cultural">Cultural</option>
+            </select>
+
+        </section>
+
+        <section class="events-section">
+
+            <h2>Upcoming Events</h2>
+
+            <!-- Task 7 -->
+            <section id="eventContainer">
+
+            </section>
+
+        </section>
+
+        <!-- Task 11 -->
+        <section class="registration-section">
+
+            <h2>Event Registration</h2>
+
+            <form id="registrationForm">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                    >
+
+                    <small id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+                    <small id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventSelect">Select Event</label>
+
+                    <select
+                        id="eventSelect"
+                        name="event"
+                    >
+                        <option value="">
+                            Choose Event
+                        </option>
+                    </select>
+
+                    <small id="eventError"></small>
+                </div>
+
+                <button type="submit" id="registerBtn">
+                    Register
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Task 9 -->
+        <div id="loadingSpinner" class="hidden">
+            Loading community events...
+        </div>
+
+        <!-- Task 12 -->
+        <div id="messageBox"></div>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Local Community Event Portal
+        </p>
+
+       
+
+    </footer>
+
+</body>
+</html>
+
