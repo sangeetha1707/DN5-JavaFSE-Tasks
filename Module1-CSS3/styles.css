@@ -1,0 +1,269 @@
+/* ==========================
+   Universal Selector
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   Body Styles
+========================== */
+
+body{
+    font-family:'Poppins',sans-serif;
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.9)
+    ),
+    url("https://images.unsplash.com/photo-1511578314322-379afb476865");
+
+    background-size:cover;
+    background-attachment:fixed;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ==========================
+   Header Styles
+========================== */
+
+#mainHeader{
+    background:linear-gradient(
+    135deg,
+    #007BFF,
+    #00C6FF);
+
+    color:white;
+    text-align:center;
+    padding:50px;
+}
+
+/* ==========================
+   Navigation Menu
+========================== */
+
+.nav-menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.nav-menu li{
+    padding:10px;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Link States */
+
+a:link{
+    color:white;
+}
+
+a:visited{
+    color:#f0f0f0;
+}
+
+a:hover{
+    color:yellow;
+}
+
+a:active{
+    color:red;
+}
+
+/* ==========================
+   h2 Styling
+========================== */
+
+h2{
+    background:linear-gradient(
+    to right,
+    #007BFF,
+    #66ccff);
+
+    color:white;
+    padding:12px;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   Statistics Section
+========================== */
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    background:rgba(0,123,255,0.1);
+    text-align:center;
+}
+
+/* ==========================
+   Event Card Styles
+========================== */
+
+.eventCard{
+    background:white;
+    border:2px solid #007BFF;
+    border-radius:10px;
+    padding:20px;
+    margin:20px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.eventCard:hover{
+    transform:translateY(-5px);
+}
+
+/* Group Selector */
+
+h3,p{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Typography
+========================== */
+
+.eventCard p{
+    text-align:justify;
+    text-transform:none;
+    letter-spacing:1px;
+    line-height:1.8;
+    font-size:15px;
+}
+
+/* ==========================
+   Multi Column Layout
+========================== */
+
+.news-columns{
+    padding:20px;
+    margin:20px;
+
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+}
+
+/* ==========================
+   Table Styling
+========================== */
+
+table{
+    width:90%;
+    margin:auto;
+}
+
+table,
+th,
+td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:12px;
+    text-align:center;
+}
+
+th{
+    background:#007BFF;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* ==========================
+   Form Styles
+========================== */
+
+form{
+    width:80%;
+    margin:auto;
+}
+
+input,
+textarea,
+button{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+.selected-field:focus{
+    outline:3px solid orange;
+}
+
+.cta-button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* ==========================
+   Visibility Demo
+========================== */
+
+.hidden-box{
+    visibility:hidden;
+}
+
+.none-box{
+    display:none;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* ==========================
+   Responsive Design
+========================== */
+
+@media screen and (max-width:768px){
+
+    .nav-menu{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .news-columns{
+        column-count:1;
+    }
+
+    body{
+        font-size:90%;
+    }
+
+    table{
+        width:100%;
+    }
+}
